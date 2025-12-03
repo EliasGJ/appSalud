@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-
+ 
 // Crear la aplicación Express
 const app = express();
 const PORT = 3000;
