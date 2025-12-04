@@ -10,9 +10,6 @@ describe('Bascula', () => {
         bascula = new Bascula();
     });
 
-
-    
-
  it('constructor inicia arrays y anotaciones vacíos', () => {    
     expect(bascula.pesos).to.eql([]);
     expect(bascula.alturas).to.eql([]);
