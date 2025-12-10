@@ -8,7 +8,7 @@ class Paciente {
     this.fechaDeNacimiento = fechaDeNacimiento;
     this.miBascula = null; // Puedes asociar una instancia de Bascula si lo necesitas
   }
-
+ 
   // Setters
   modificarNombre(newName) {
     if (!newName) {

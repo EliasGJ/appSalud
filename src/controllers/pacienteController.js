@@ -1,5 +1,12 @@
+const pacienteRepository = require('../repositories/pacienteRepository.js');
+
 const obtenerPaciente = async (req, res) => {
-   
+    const { id } = req.params;
+    const paciente = await pacienteRepository.obtenerPorId(id);
+    res.render('paciente', {
+        title: 'Detalles del Paciente',
+        paciente
+    });
 };
 
 const crearPaciente = async (req, res) => {

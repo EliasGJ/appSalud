@@ -7,11 +7,11 @@ const methodOverride = require('method-override');
 const pacienteRouter = require('./routes/paciente');
 const basculaRouter = require('./routes/bascula');
 
-
+ 
 // Crear la aplicación Express
 const app = express();
 const PORT = 3000;
-
+app.use
 //Interpreta los datos de formularios HTML.
 app.use(bodyParser.urlencoded({ extended: true }));
 //Interptesa los datos en formato JSON
@@ -28,11 +28,11 @@ app.set('views', './src/views');
 //rutas
 // Ruta principal
 app.get('/', (req, res) => {
-  res.send('Hola Mundo desde Express!');
+  res.redirect('./pacientes')
 });
 
-app.use('/paciente', pacienteRouter);
-app.use('/bascula', basculaRouter);
+app.use('/', pacienteRouter);
+app.use('/', basculaRouter);
 //----------------
 
 
