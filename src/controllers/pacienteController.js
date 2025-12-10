@@ -12,7 +12,7 @@ const actualizarPaciente = async (req, res) => {
 
 const eliminarPaciente = async (req, res) => {
  
-};
+};  
 
 const listarPacientes = async (req, res) => {
     const pacientes = await pacienteRepository.listar();
