@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%= title %>
+        <%= title%>
     </title>
 </head>
 
@@ -19,10 +19,12 @@
     <ul>
         <% pacientes.forEach(function(paciente) { %>
             <li>
-            <strong>
-                <%= paciente.nombre %>
-                <%= paciente.apellidos %>
-            <strong>
+                 <strong>
+                     <%= paciente.nombre %>
+                     <%= paciente.apellidos %>
+                 <strong>
+                <!--Boton para ver el paceinte-->
+                <a href="/paciente/<%= paciente.id %>">Ver</a>
           </li>
           <% }); %>
 
